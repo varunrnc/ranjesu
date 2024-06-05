@@ -11,4 +11,14 @@ class AdminSliderController extends Controller
     {
         return view('admin.slider.index');
     }
+
+    public function create()
+    {
+        return view('admin.slider.create');
+    }
+
+    public function store(Request $request)
+    {
+        return $request->all();
+    }
 }

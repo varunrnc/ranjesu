@@ -18,7 +18,11 @@ require __DIR__.'/auth.php';
 
 Route::prefix('admin')->group(function() {
     Route::middleware('auth')->group(function() {
-        Route::get('/slider', [AdminSliderController::class, 'index'])->name('admin.slider');
+        Route::controller(AdminSliderController::class)->group(function() {
+            Route::get('/slider', 'index')->name('admin.slider');
+            Route::get('/slider/create', 'create')->name('admin.slider.create');
+            Route::post('/slider/store', 'store')->name('admin.slider.store');
+        });
         Route::get('/newsevents', [AdminNewsEventsController::class, 'index'])->name('admin.newsevents');
         Route::get('/gallery', [AdminGalleryController::class, 'index'])->name('admin.gallery');
         Route::get('/video-gallery', [AdminVideoGalleryController::class, 'index'])->name('admin.video.gallery');
