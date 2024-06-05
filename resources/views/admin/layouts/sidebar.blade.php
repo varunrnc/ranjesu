@@ -1,11 +1,11 @@
 <div class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
         <div>
-            <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon" />
+            <img src="{{asset('public/assets/images/logo.png')}}" class="img-fluid" alt="logo icon" width="250px" />
         </div>
-        <div>
-            <h4 class="logo-text">LoomangCraft</h4>
-        </div>
+        {{-- <div>
+            <h4 class="logo-text">Ranjesu</h4>
+        </div> --}}
         <div class="toggle-icon ms-auto">
             <i class="bx bx-arrow-back"></i>
         </div>
@@ -19,40 +19,95 @@
             </a>
             <ul>
                 <li>
-                    <a href="index.html"><i class="bx bx-radio-circle"></i>Default</a>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Slider</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Upcoming Events</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Gallery</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Video Gallery</a>
                 </li>
             </ul>
         </li>
         <li>
             <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bx bx-category"></i></div>
-                <div class="menu-title">Application</div>
+                <div class="parent-icon"><i class='bx bx-book-open'></i></div>
+                <div class="menu-title">Blogs</div>
             </a>
             <ul>
                 <li>
-                    <a href="app-emailbox.html"><i class="bx bx-radio-circle"></i>Email</a>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add New</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>All Blogs</a>
                 </li>
 
             </ul>
         </li>
-        <li class="menu-label">UI Elements</li>
-        <li>
-            <a href="widgets.html">
-                <div class="parent-icon"><i class="bx bx-cookie"></i></div>
-                <div class="menu-title">Widgets</div>
-            </a>
-        </li>
         <li>
             <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bx bx-cart"></i></div>
-                <div class="menu-title">eCommerce</div>
+                <div class="parent-icon"><i class='bx bx-book-open'></i></div>
+                <div class="menu-title">Articles</div>
             </a>
             <ul>
                 <li>
-                    <a href="ecommerce-products.html"><i class="bx bx-radio-circle"></i>Products</a>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add New</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Articles - English</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Articles - Hindi</a>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class='bx bx-user-plus'></i></div>
+                <div class="menu-title">Curia Members</div>
+            </a>
+            <ul>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add Member</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Member List</a>
                 </li>
             </ul>
         </li>
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class='bx bx-book-open'></i></div>
+                <div class="menu-title">Pages</div>
+            </a>
+            <ul>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add New</a>
+                </li>
+                <li>
+                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>All Pages</a>
+                </li>
+            </ul>
+        </li>
+
+        {{-- <li class="menu-label">UI Elements</li> --}}
+        <li>
+            <a href="javascript:void">
+                <div class="parent-icon"><i class='bx bx-user' ></i></div>
+                <div class="menu-title">Users</div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void">
+                <div class="parent-icon"><i class='bx bx-lock-alt' ></i></div>
+                <div class="menu-title">Permissions</div>
+            </a>
+        </li>
+
 
     </ul>
     <!--end navigation-->

@@ -3,12 +3,12 @@
         <nav class="navbar navbar-expand gap-3">
             <div class="mobile-toggle-menu"><i class="bx bx-menu"></i></div>
             <!-- search box  -->
-            <div class="position-relative search-bar d-lg-block d-none">
+            {{-- <div class="position-relative search-bar d-lg-block d-none">
                 <input class="form-control px-5" type="search" placeholder="Search" />
                 <span
                     class="position-absolute top-50 search-show ms-3 translate-middle-y start-0 top-50 fs-5"><i
                         class="bx bx-search"></i></span>
-            </div>
+            </div> --}}
 
             <div class="top-menu ms-auto">
                 <ul class="navbar-nav align-items-center gap-1">
@@ -44,9 +44,10 @@
             <div class="user-box dropdown px-3">
                 <a class="d-flex align-items-center nav-link dropdown-toggle gap-3 dropdown-toggle-nocaret"
                     href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/avatars/avatar-1.png" class="user-img" alt="user avatar" />
+                    <img src="{{asset('public/assets/images/avatars/user.png')}}" class="user-img" alt="user avatar" />
                     <div class="user-info">
                         <p class="user-name mb-0">Admin</p>
+                        <span>Super Admin</span>
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -62,8 +63,11 @@
                         <div class="dropdown-divider mb-0"></div>
                     </li>
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i
+                        <form method="POST" action="{{ route('logout') }}">@csrf
+                            <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}" onclick="event.preventDefault();
+                            this.closest('form').submit();"><i
                                 class="bx bx-log-out-circle"></i><span>Logout</span></a>
+                        </form>
                     </li>
                 </ul>
             </div>
