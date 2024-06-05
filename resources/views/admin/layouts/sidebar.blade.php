@@ -19,16 +19,16 @@
             </a>
             <ul>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Slider</a>
+                    <a href="{{route('admin.slider')}}"><i class="bx bx-radio-circle"></i>Slider</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Upcoming Events</a>
+                    <a href="{{route('admin.newsevents')}}"><i class="bx bx-radio-circle"></i>Upcoming Events</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Gallery</a>
+                    <a href="{{route('admin.gallery')}}"><i class="bx bx-radio-circle"></i>Gallery</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Video Gallery</a>
+                    <a href="{{route('admin.video.gallery')}}"><i class="bx bx-radio-circle"></i>Video Gallery</a>
                 </li>
             </ul>
         </li>
@@ -42,7 +42,7 @@
                     <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add New</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>All Blogs</a>
+                    <a href="{{route('admin.blog')}}"><i class="bx bx-radio-circle"></i>All Blogs</a>
                 </li>
 
             </ul>
@@ -57,10 +57,10 @@
                     <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add New</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Articles - English</a>
+                    <a href="{{route('admin.english.article')}}"><i class="bx bx-radio-circle"></i>Articles - English</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Articles - Hindi</a>
+                    <a href="{{route('admin.hindi.article')}}"><i class="bx bx-radio-circle"></i>Articles - Hindi</a>
                 </li>
 
             </ul>
@@ -75,7 +75,7 @@
                     <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add Member</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>Member List</a>
+                    <a href="{{route('admin.team')}}"><i class="bx bx-radio-circle"></i>Member List</a>
                 </li>
             </ul>
         </li>
@@ -89,20 +89,20 @@
                     <a href="javascript:void"><i class="bx bx-radio-circle"></i>Add New</a>
                 </li>
                 <li>
-                    <a href="javascript:void"><i class="bx bx-radio-circle"></i>All Pages</a>
+                    <a href="{{route('admin.page')}}"><i class="bx bx-radio-circle"></i>All Pages</a>
                 </li>
             </ul>
         </li>
 
         {{-- <li class="menu-label">UI Elements</li> --}}
         <li>
-            <a href="javascript:void">
+            <a href="{{route('admin.user')}}">
                 <div class="parent-icon"><i class='bx bx-user' ></i></div>
                 <div class="menu-title">Users</div>
             </a>
         </li>
         <li>
-            <a href="javascript:void">
+            <a href="{{route('admin.permission')}}">
                 <div class="parent-icon"><i class='bx bx-lock-alt' ></i></div>
                 <div class="menu-title">Permissions</div>
             </a>

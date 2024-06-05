@@ -19,6 +19,7 @@
 	<link href="{{asset('public/assets/css/app.css')}}" rel="stylesheet" />
 	<link href="{{asset('public/assets/css/icons.css')}}" rel="stylesheet" />
 	<title>Admin</title>
+    @yield('page-css')
 </head>
 
 <body>
@@ -48,19 +49,23 @@
 	</div>
 	<!--end wrapper-->
 
+    <script src="{{asset('public/assets/js/jquery.min.js')}}"></script>
 	<!-- Bootstrap JS -->
 	<script src="{{asset('public/assets/js/bootstrap.bundle.min.js')}}"></script>
 	<!--plugins-->
-	<script src="{{asset('public/assets/js/jquery.min.js')}}"></script>
+
 	<script src="{{asset('public/assets/plugins/simplebar/js/simplebar.min.js')}}"></script>
 	<script src="{{asset('public/assets/plugins/metismenu/js/metisMenu.min.js')}}"></script>
 	<script src="{{asset('public/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
+	<script src="{{asset('public/assets/plugins/datatable/js/jquery.dataTables.min.js')}}"></script>
+	<script src="{{asset('public/assets/plugins/datatable/js/dataTables.bootstrap5.min.js')}}"></script>
 	<script src="{{asset('public/assets/js/index.js')}}"></script>
 	<!--app JS-->
 	<script src="{{asset('public/assets/js/app.js')}}"></script>
 	<script>
 		new PerfectScrollbar(".app-container");
 	</script>
+    @yield('page-js')
 </body>
 
 </html>
