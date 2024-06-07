@@ -15,12 +15,12 @@
                             <div class="row g-3">
                                 <div class="col-md-12">
                                     <label for="sliderName" class="form-label">Slider Name</label>
-                                    <input type="text" class="form-control" name="slider_name" id="sliderName">
+                                    <input type="text" class="form-control" name="slider_name" id="sliderName" value="{{old('slider_name')}}">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="sliderOrder" class="form-label">Slider Order</label>
                                     <input type="number" min="1" class="form-control" name="slider_order"
-                                        id="sliderOrder">
+                                        id="sliderOrder" value="{{old('slider_name')}}">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="sliderDesktop" class="form-label">Slider for Desktop (1440x450)</label>
