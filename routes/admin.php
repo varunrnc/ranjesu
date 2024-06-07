@@ -40,7 +40,9 @@ Route::prefix('admin')->group(function() {
 
         Route::get('/page', [AdminPageController::class, 'index'])->name('admin.page');
 
-        Route::get('/user', [AdminUserController::class, 'index'])->name('admin.user');
+        Route::controller(AdminUserController::class)->group(function() {
+            Route::get('/user', 'index')->name('admin.user');
+        });
         
         Route::controller(AdminPermissionController::class)->group(function() {
             Route::get('/permission', 'index')->name('admin.permission');
