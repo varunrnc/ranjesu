@@ -38,4 +38,11 @@ class AdminPermissionController extends Controller
         }
         return redirect()->route('admin.permission')->with('success', 'Permission Added Successfully');
     }
+
+    public function destroy(Request $request)
+    {
+        $permission = Permission::find($request->id);
+        $permission->delete();
+        return redirect()->route('admin.permission')->with('success', 'Permission Deleted Successfully');
+    }
 }

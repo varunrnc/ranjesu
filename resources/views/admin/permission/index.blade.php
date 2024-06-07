@@ -26,9 +26,8 @@
                                 <tr>
                                     <td>{{ $permission->name }}</td>
                                     <td>{{ $permission->key }}</td>
-                                    <td><button type="button" class="btn btn-outline-danger"><i
-                                                class='bx bxs-trash-alt'></i>
-                                        </button></td>
+                                    <td><a href="{{route('admin.permission.destroy', $permission->id)}}" class="btn btn-sm btn-danger px-2">Delete</a></td>
+                                    
                                 </tr>
                             @endforeach
 

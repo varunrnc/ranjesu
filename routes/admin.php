@@ -45,6 +45,7 @@ Route::prefix('admin')->group(function() {
         Route::controller(AdminPermissionController::class)->group(function() {
             Route::get('/permission', 'index')->name('admin.permission');
             Route::post('/permission/store', 'store')->name('admin.permission.store');
+            Route::get('/permission/destroy/{id}', 'destroy')->name('admin.permission.destroy');
         });
     });
 });
