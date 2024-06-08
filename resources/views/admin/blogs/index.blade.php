@@ -14,7 +14,7 @@
                         <thead>
                             <tr class="text-center">
                                 <th>S.N.</th>
-                                <th>Title</th>
+                                <th>Title1</th>
                                 <th>Published Date</th>
                                 <th>Published</th>
                                 <th>Action</th>
